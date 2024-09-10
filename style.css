@@ -246,6 +246,19 @@ body {
     padding-bottom: 60px;
 }
 
+/* Fifth */
+#fifth_section {
+    padding-top: 30px;
+}
+#fifth_section img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+#fifth_section .swiper-wrapper {
+    padding-bottom: 60px;
+}
+
 /* forth */
 #forth_section {
     margin-top: 30px;

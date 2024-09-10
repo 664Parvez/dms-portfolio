@@ -272,9 +272,43 @@
 
     <div id="third_section">
         <div class="container">
-            <h2 class="text-center mb-4">Trusted By Industry Leading Organizations Including</h2>
+            <h2 class="text-center mb-4">Local Clients</h2>
             <div>
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiperThree">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./image/partner-logo.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./image/partner-logo.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./image/partner-logo.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./image/partner-logo.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./image/partner-logo.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./image/partner-logo.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                          <img src="./image/partner-logo.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="fifth_section">
+        <div class="container">
+            <h2 class="text-center mb-4">Foreign Clients</h2>
+            <div>
+                <div class="swiper mySwiperFive">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <img src="./image/partner-logo.png" alt="">
@@ -397,7 +431,7 @@
             <hr>
 
             <div class="text-center">
-                <p class="text-light">© 2008 - 2024 DMS Bangladesh. All Right Reserved. | Design & Development By:- <a class="text-light" href="https://www.digitalmarketingbd.com/">Digital Marketing Solution (Pvt.) Ltd.</a></p>
+                <p class="text-light mb-0">© 2008 - 2024 DMS Bangladesh. All Right Reserved. | Design & Development By:- <a class="text-light" href="https://www.digitalmarketingbd.com/">Digital Marketing Solution (Pvt.) Ltd.</a></p>
             </div>
         </div>
     </div>
@@ -411,8 +445,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        // Seven
-        var swiper = new Swiper(".mySwiper", {
+        // Three
+        var swiper = new Swiper(".mySwiperThree", {
             slidesPerView: 5,
             spaceBetween: 10,
             pagination: {
@@ -424,6 +458,41 @@
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        // Five
+        var swiper = new Swiper(".mySwiperFive", {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                reverseDirection: true
             },
             breakpoints: {
                 300: {
