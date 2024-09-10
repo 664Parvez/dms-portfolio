@@ -208,6 +208,12 @@ body {
 #second_section {
     padding-top: 30px;
 }
+#second_section h2 {
+    font-size: 50px;
+}
+#second_section h2 span {
+    color: #EF6E2B;
+}
 .home_category {
     background-color: #F8F9FA;
     padding: 15px;
@@ -220,6 +226,11 @@ body {
     height: auto;
     width: 100%;
     border-radius: 5px;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    #second_section h2 {
+        font-size: 30px;
+    }
 }
 
 /* Third */
@@ -299,6 +310,7 @@ footer h4 {
 footer ul li a {
     color: #ffffff;
     transition: .5s ease-in-out;
+    font-size: 15px;
 }
 footer ul li a:hover {
     color: #f1f1f1;
