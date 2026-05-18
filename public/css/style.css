@@ -244,6 +244,11 @@ body {
     box-shadow: 1px 5px 15px #a8a8a8;
     display: none;
 }
+#search_fill {
+    background-color: #0b2453;
+    padding: 5px;
+    border-radius: 12px;
+}
 .search_list.active {
     display: block !important;
 }
