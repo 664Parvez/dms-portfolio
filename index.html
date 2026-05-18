@@ -293,8 +293,36 @@
     <!-- Hero -->
     <div id="hero">
         <div class="container">
-            <h1 class="text-center">Empowering Brands with <span>Digital Marketing, Creative Design, and Web
-                    Development</span> Solutions</h1>
+            <h1 class="text-center">What Type of Project Are You Looking For? Explore Our Previous Great Work</h1>
+            <div class="my-5" id="search_fill">
+                <input type="text" placeholder="Search our work ..." name="" class="form-control form-control-lg" id="search_field_bar">
+                <div class="search_list" id="suggestionsBox">
+                    <div class="">
+                        <ul>
+                            <a href="">
+                                <li class="d-flex justify-content-start align-items-center gap-3">
+                                    <img src="./image/business-card.jpg" alt="">
+                                    <h5 class="mb-0">Post Design</h5>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="d-flex justify-content-start align-items-center gap-3">
+                                    <img src="./image/business-card.jpg" alt="">
+                                    <h5 class="mb-0">Logo Design</h5>
+                                </li>
+                            </a>
+                            <a href="">
+                                <li class="d-flex justify-content-start align-items-center gap-3">
+                                    <img src="./image/business-card.jpg" alt="">
+                                    <h5 class="mb-0">Website Design</h5>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-center">Empowering Brands with <span>Digital Marketing, Creative Design, and Web
+                    Development</span> Solutions</h2>
             <div class="text-center">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi corrupti earum sit commodi
                     perspiciatis laborum tempora tempore impedit exercitationem labore? Soluta odio unde vitae incidunt
@@ -1506,6 +1534,24 @@
                     spaceBetween: 20,
                 },
             },
+        });
+
+
+        const search_field_bar = document.getElementById("search_field_bar")
+        const suggestionsBox = document.getElementById("suggestionsBox")
+
+        search_field_bar.addEventListener("click", (e) => {
+            // e.preventDefault()
+            suggestionsBox.classList.add("active");
+        })
+
+        document.addEventListener("click", (e) => {
+            if (
+                !search_field_bar.contains(e.target) &&
+                !suggestionsBox.contains(e.target)
+            ) {
+                suggestionsBox.classList.remove("active");
+            }
         });
     </script>
 
