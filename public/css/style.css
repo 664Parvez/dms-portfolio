@@ -1011,7 +1011,9 @@ footer ul li a:hover {
     width: 100%;
     border-radius: 10px;
 }
-
+#main_section h5 {
+    color: #0b2453;
+}
 .main_section {
     padding: 30px 0;
 } 
