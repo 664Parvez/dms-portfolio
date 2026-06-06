@@ -173,6 +173,12 @@ body {
     background-color: var(--second-color);
     color: var(--white-color);
 }
+
+/* Show the menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Prevents a 1px gap that might close the menu */
+}
 @media only screen and (min-width: 300px) and (max-width: 500px) {
     .offcanvas {
         overflow-y: scroll;
@@ -745,6 +751,20 @@ div:hover {
         font-size: 35px;
     }
 }
+
+/* Parent Page */
+.parent_main_section {
+    padding: 50px 0;
+}
+.parent_main_section a {
+    color: #0b2453;
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    .parent_main_section {
+        padding: 30px 0;
+    }
+}
+/* Parent Page */
 
 /* FAQ */
 #faq_section {
