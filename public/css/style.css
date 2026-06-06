@@ -244,6 +244,11 @@ body {
     width: 70%;
     margin: auto;
 }
+#parent_search_fill {
+    margin: auto;
+    width: 70%;
+    margin-top: 30px;
+}
 .search_list {
     position: absolute;
     background-color: #ffffff;
