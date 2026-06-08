@@ -284,6 +284,9 @@ body {
 .search_list img {
     width: 50px;
 }
+#search_field_bar {
+    width: 50%;
+}
 @keyframes downIcon {
     0% {
         transform: translateY(0px);
@@ -330,6 +333,12 @@ body {
     }
     #hero h2 {
         font-size: 30px;
+    }
+    #parent_search_fill {
+        width: 100%;
+    }
+    #search_fill {
+        width: 95%;
     }
 }
 /* .fa-location-arrow {
@@ -568,6 +577,11 @@ div:hover {
     padding-bottom: 60px;
 }
 
+/* Project */
+#project_card .card {
+    padding: 10px;
+}
+
 /* forth */
 #forth_section {
     padding: 50px;
@@ -694,6 +708,44 @@ div:hover {
 .point_of_pricing {
     height: 200px;
     overflow-y: scroll;
+}
+
+.categoriesSlide {
+    padding: 10px 0;
+}
+.categoriesSlide .card {
+    padding: 10px;
+    outline: 1px solid #0b2453;
+    border-radius: 30px;
+}
+.categoriesSlide .card a {
+    color: #1976D2;
+}
+.categoriesSlide .card:hover {
+    background-color: #EF6E2B;
+    outline: none;
+}
+.categoriesSlide .card:hover a {
+    color: #ffffff;
+}
+
+.subCategoriesSlide {
+    padding: 10px 0 !important;
+}
+.subCategoriesSlide .card {
+    padding: 10px;
+    outline: 1px solid #0b2453;
+    border-radius: 30px;
+}
+.subCategoriesSlide .card a {
+    color: #1976D2;
+}
+.subCategoriesSlide .card:hover {
+    background-color: #EF6E2B;
+    outline: none;
+}
+.subCategoriesSlide .card:hover a {
+    color: #ffffff;
 }
 
 /* Testimonial */
