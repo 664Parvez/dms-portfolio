@@ -295,7 +295,8 @@
     <div id="hero">
         <div class="container">
             <h1 class="text-center">What Type of <span>Project</span> Are You Looking For? Explore Our Previous
-                <span>Great Work</span></h1>
+                <span>Great Work</span>
+            </h1>
             <div class="mt-4 mb-5" id="search_fill">
                 <div class="input-group">
                     <select class="form-select" id="inputGroupSelect01">
@@ -358,44 +359,56 @@
     </div>
 
     <div id="scroll_text">
-        <div class="m-scroll">
-            <div class="m-scroll__title">
-                <div>
-                    <h1>
-                        <a href="void:javascript"> Likedin</a> <a href="void:javascript">Dribbble</a> <i
-                            class="fa-solid fa-star-of-life"></i> <a href="void:javascript">Instagram </a> <i
-                            class="fa-solid fa-star-of-life"></i>
-                    </h1>
-                    <h1>
-                        <a href="void:javascript"> Likedin</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Dribbble</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Instagram </a><i class="fa-solid fa-star-of-life"></i>
-                    </h1>
-                    <h1>
-                        <a href="void:javascript"> Likedin</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Dribbble</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Instagram </a> <i class="fa-solid fa-star-of-life"></i>
-                    </h1>
-                    <h1>
-                        <a href="void:javascript"> Likedin</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Dribbble</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Instagram </a> <i class="fa-solid fa-star-of-life"></i>
-                    </h1>
-                    <h1>
-                        <a href="void:javascript"> Likedin</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Dribbble</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Instagram </a> <i class="fa-solid fa-star-of-life"></i>
-                    </h1>
-                    <h1>
-                        <a href="void:javascript"> Likedin</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Dribbble</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Instagram </a> <i class="fa-solid fa-star-of-life"></i>
-                    </h1>
-                    <h1>
-                        <a href="void:javascript"> Likedin</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Dribbble</a> <i class="fa-solid fa-star-of-life"></i> <a
-                            href="void:javascript">Instagram </a> <i class="fa-solid fa-star-of-life"></i>
-                    </h1>
+        <div class="swiper myScrollSocialMedia">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="home_scroll_social">
+                        <a href="./logo-design.html">
+                            <h3 class="mt-3"><i class="fa-solid fa-star-of-life"></i> Facebook <i class="fa-solid fa-star-of-life"></i></h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home_scroll_social">
+                        <a href="./post-banner-design.html">
+                            <h3 class="mt-3"><i class="fa-solid fa-star-of-life"></i> Instagram <i class="fa-solid fa-star-of-life"></i></h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home_scroll_social">
+                        <a href="./ads-banner-design.html">
+                            <h3 class="mt-3"><i class="fa-solid fa-star-of-life"></i> LinkedIn <i class="fa-solid fa-star-of-life"></i></h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home_scroll_social">
+                        <a href="./thumbnail-design.html">
+                            <h3 class="mt-3"><i class="fa-solid fa-star-of-life"></i> Twitter <i class="fa-solid fa-star-of-life"></i></h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home_scroll_social">
+                        <a href="./videos.html">
+                            <h3 class="mt-3"><i class="fa-solid fa-star-of-life"></i> Pinterest <i class="fa-solid fa-star-of-life"></i></h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home_scroll_social">
+                        <a href="./motion-video.html">
+                            <h3 class="mt-3"><i class="fa-solid fa-star-of-life"></i> Behance <i class="fa-solid fa-star-of-life"></i></h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="home_scroll_social">
+                        <a href="./website-design-and-development.html">
+                            <h3 class="mt-3"><i class="fa-solid fa-star-of-life"></i> Youtube <i class="fa-solid fa-star-of-life"></i></h3>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1451,6 +1464,43 @@
                 1024: {
                     slidesPerView: 4,
                     spaceBetween: 50,
+                },
+            },
+        });
+
+        // Three
+        var swiper = new Swiper(".myScrollSocialMedia", {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            speed: 4000, 
+            grabCursor: true,
+            allowTouchMove: false,
+            loop: true,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 10,
                 },
             },
         });
